@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: var(--cor1);
+    background-image: url("imagens/pattern003.png");
 }
 
 a.externo::after {
