@@ -22,7 +22,7 @@
 }
 
 body {
-    background-image: url("imagens/pattern003.png");
+    background-image: url("imagens/pexels-albinawhite-12246242.jpg");
 }
 
 a.externo::after {
@@ -108,6 +108,25 @@ main h2 {
     border-color: var(--cor5);
 }
 
+main h3 {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+    color: var(--cor5);
+}
+
+.imagem-congresso {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-left: 140px;
+}
+
+.imagem-congresso:hover {
+    opacity: 0.8;
+}
+
 main p {
     text-align: justify;
     text-indent: 50px;
@@ -161,6 +180,24 @@ article > a {
     color: var(--cor5);
     background-color: var(--cor2);
     padding: 2px 6px;
+}
+
+.meu-botao {
+    background-color: var(--cor5);
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.meu-botao:hover {
+    background-color: var(--cor4);
 }
 
 article a:hover {
