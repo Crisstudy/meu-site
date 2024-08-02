@@ -22,7 +22,9 @@
 }
 
 body {
-    background-image: url("imagens/pexels-albinawhite-12246242.jpg");
+    height: 100vh;
+    background: black url("imagens/pexels-albinawhite-12246242.jpg") center center no-repeat fixed;
+    background-size: cover;
 }
 
 a.externo::after {
@@ -116,11 +118,11 @@ main h3 {
 }
 
 .imagem-congresso {
-    width: 300px;
+    width: 100%;
     height: auto;
     border: 2px solid black;
     border-radius: 8px;
-    margin-left: 140px;
+    margin: auto;
 }
 
 .imagem-congresso:hover {
