@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo Mulher</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu">
     <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,21 +12,30 @@
     <header>
         <h1>Universo Mulher</h1>
         <p>Tudo sobre as mulheres</p>
-        <nav>
-           <a href="#">HOME</a>
-           <a href="#">NOTICIAS</a>
-           <a href="#">BOAS VINDAS</a>
-           <a href="#">BLOG</a>
-           <a href="#">EVENTOS</a>
-           <a href="#">FALE CONOSCO</a>
+        <nav class="navbar">
+            <div>
+                <span id="burguer" class="material-simbols-outlined" onclick="clickMenu()">
+                    menu
+                </span>
+            </div>
+           <menu id="itens">
+               <a href="#home">HOME</a>
+               <a href="#boas vindas">BOAS VINDAS</a>
+               <a href="#contato">CONTATO</a>
+               <a href="#Eventos">EVENTOS&MATERIAL</a>
+               <a href="#noticias">NOTICIAS</a>
+               <a href="#blog">BLOG</a>
+           </menu>
         </nav>
     </header>
-
+    <div class="texto-biblico">
+        MENSAGEM OCULTA AQUI!
+        <p>Amulher sábia edifica a cas, mas a sem juízo, com as suas próprias máos a destrói. <br>Provérbios 14:1</p>
+    </div>
         <main>
-            
-            <section id="assuntos">
-                <div class="container">
-                    <div class="bloco">
+            <div class="container">
+                <div class="bloco"> 
+                    <section id="home">
                         <h2>Mulheres abencoando outras mulheres</h2>
                         <picture>
                             <source media="(max-width: 600px)" srcset="imagens/imagem-assuntosP.jpg">
@@ -33,33 +43,47 @@
                         </picture>
                             <p>Bem vindo a esse novo estilo de auto conhecimento sobre a <strong>mulher</strong> e sobre um pouco de tudo que envolve o universo feminino, buscar o que há de melhor em nós, ajudando a enfrentar os desafios de cada novo dia, com muita fé e beleza. É uma honra receber a sua visita! Navegue pelo site para descobrir o que temos para você!</p>
                             <h2>Como somos</h2>
-                            <p>Existem histórias reais de <strong>mulheres</strong> que venceram seus desafios externos e internos e se tornaram, virtuosas, sábias, lindas, alegres, mansas, suaves, cheias de fé, inteligentes, dinâmicas etc... apesar de todas as circunstãncias da vida.</p>
-                            <p>Todas nós temos uma necessidade diferente e específica, geralmente isso depende muito de onde, como e o que estamos vivendo ... Refletir e auto avaliar tudo isso é o mais importante para dar início as mudanças que desejamos ou dar continuidade no que já alcançamos.</p>
-                        <h2>Boas vindas</h2>
-                            <div class="video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/dcQQHDePN_k?si=ruNPZ1ZvFYssalIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <p>CEO - Pra Cristina Saraiva Figueirêdo</p>
-                    </div>
-                    
-                    <div class="bloco">
-                        <h2>Quem somos?</h2>
-                        <p>Somos mulher, filha, mãe, irmã, esposa, estudante, amiga, discípula, pastora, compositora, cantora, sonhadora, dona de casa etc... Assim como você somos mil e uma coisa e ainda assim nosso currículo estará incompleto por que fazemos mais do que imaginamos e estamos sempre em busca de mais.</p>
-                        <button class="meu-botao">ENTRE EM CONTATO</button>
-                        <h2>Nossa missão</h2>
-                        <p>Trazer novidades, informações, conselhos, ajudar dentro da diversidade de cada uma das experiências de mulheres reais que enfrentam os mesmos desafios diários da vida. Basta entrar em contato para saber como podemos te ajudar. Todas nós temos uma necessidade diferente e específica, geralmente isso depende muito de onde, como e o que estamos vivendo ... Refletir e auto avaliar tudo isso é o mais importante para dar início as mudanças que desejamos ou dar continuidade no que já alcançamos.</p>
-                        <h2>Nosso material</h2>
-                        <p>Tenha uma vida de comunhão na presença de Deus, mantendo um devocional diário com lições biblícas e reflexões; para te ajudar, temos diversos livros devocionais que trarão ensinamentos e incentivos para você mulher que ama a Deus e precisa busca-lo mais e mais. acesse o link e adquira já o seu "Mulheres em oração!"</p>
-                        <h2>Eventos</h2>
-                        <p>Participe de um destes eventos direcionados exclusivamente para as mulheres que tem sede de mais de Deus;</p>
-                        <h3>faça sua inscrição aqui!</h3>
-                            <a href="https://www.e-inscricao.com/mantbrasil/congressodemulheres?fbclid=PAZXh0bgNhZW0CMTEAAaay8fBy0fXG1CYm_qWnJwJhLKqIXwpu-8lzX9NJ2Vh0VEEE51fHtZuvk2Y_aem_a2zg60YURb1FRDeLz6Lmsw" target="_blank">
-                                <img src="imagens/IMG-20240801-WA0012.jpg" alt="congresso mulheres" class="imagem-congresso">
-
-                            </a>
-                    </div>
+                            <p>Existem histórias reais de <strong>mulheres</strong> que venceram seus desafios externos e internos e se tornaram, virtuosas, sábias, lindas, alegres, mansas, suaves, cheias de fé, inteligentes, dinâmicas etc... apesar de todas as circunstãncias da vida.
+                            Todas nós temos uma necessidade diferente e específica, geralmente isso depende muito de onde, como e o que estamos vivendo ... Refletir e auto avaliar tudo isso é o mais importante para dar início as mudanças que desejamos ou dar continuidade no que já alcançamos.</p>
+                            <h2>Nossa missão</h2>
+                            <p>Trazer novidades, informações, conselhos, ajudar dentro da diversidade de cada uma das experiências  de mulheres reais que enfrentam os mesmos desafios diários da vida. Basta entrar em contato para saber como podemos te ajudar. Todas nós temos uma necessidade diferente e específica, geralmente isso   depende muito de onde, como e o que estamos   vivendo ... Refletir e auto avaliar tudo isso é o mais importante para dar início as mudanças que desejamos ou dar continuidade no que já alcançamos. </p>
+                    </section>
+                    <section id="contato">
+                        <h2>Contato</h2>
+                        <p>Entre em contato ou nos deixe uma mensagem com um pedido de oração, teremos o prazer de ajudar.</p>
+                        <a href="form.html" target="_blank"><br><button class="meu-botão">FALE CONOSCO</button></p></a>
+                    </section>
                 </div>
-            </section>
+                <div class="bloco">
+                    <section id="boas-vindas">
+                        <h2>Boas vindas</h2>
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dcQQHDePN_k?si=ruNPZ1ZvFYssalIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"allowfullscreen></iframe>
+                        </div>
+                            <p>CEO - Pra Cristina Saraiva Figueirêdo</p>
+                            <h2>Quem somos?</h2>
+                        <p>Somos mulher, filha, mãe, irmã, esposa, estudante, amiga, discípula, pastora, compositora, cantora, sonhadora, dona de casa etc... Assim como você somos mil e uma coisa e ainda assim nosso currículo estará incompleto por que fazemos mais do que imaginamos e estamos sempre em busca de mais.</p>
+                    </section>                
+                    <section id="eventos">
+                        <h2>Eventos</h2>
+                            <h3>faça sua inscrição aqui!</h3>
+                                <a href="https://www.e-inscricao.com/mantbrasil/congressodemulheres?fbclid=PAZXh0bgNhZW0CMTEAAaay8fBy0fXG1CYm_qWnJwJhLKqIXwpu-8lzX9NJ2Vh0VEEE51fHtZuvk2Y_aem_a2zg60YURb1FRDeLz6Lmsw" target="_blank">
+                                <img src="imagens/IMG-20240801-WA0012jpg" alt="congresso mulheres"class="imagem-congresso"></a>
+                                <p>Participe de um destes eventos direcionados para as mulheres que tem sede de mais de Deus.</p>
+                            <h2>Nosso material</h2>
+                            <p>Tenha uma vida de comunhão na presença de Deus, mantendo um devocional diário com lições biblícas e reflexões; para te ajudar, temos diversos livros devocionais que trarão ensinamentos e incentivos para você mulher que ama a Deus e precisa busca-lo mais e mais. acesse o link e adquira já o seu "Mulheres em oração!"</p>
+                            <div class="caixa-livro">
+                                <a href="https://loja.uiclap.com/titulo/ua37648" target="_blank">
+                                    <img src="imagens/template-uiclap-37648-post (2)-peq.jpg" alt="edição 1" class="imagem-livro"></a>
+                                    <a href="https://loja.uiclap.com/titulo/ua55017" target="_blank">
+                                    <img src="imagens/template-uiclap-47158-post (1)-peq.jpg" alt="edição 2" class="imagem-livro"></a>
+                                    <a href="https://loja.uiclap.com/titulo/ua55142" target="_blank">
+                                    <img src="imagens/template-uiclap-55142-post-peq.jpg" alt="edição 3" class="imagem-livro">
+                                </a>  
+                            </div>
+                    </section>
+                </div>
+            </div>    
         </main>
 
     <article>
