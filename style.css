@@ -179,8 +179,10 @@ main p {
 }
 
 .imagem-congresso {
+    display: block;
     width: 100%;
     height: auto;
+    object-fit: contain;
     border: 2px solid black;
     border-radius: 8px;
     margin: auto;
@@ -191,7 +193,7 @@ main p {
 }
 
 main p {
-    text-align: justify;
+    text-align: left;
     text-indent: 50px;
     font-family: var(--font-padrao);
     font-size: 20px;
